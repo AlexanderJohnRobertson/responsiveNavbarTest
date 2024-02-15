@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --clr-bg-header: #24262b;
-  --clr-btn: #24262b;
-  --clr-dropdown: #dd00ff;
-  --clr-nav-hover: #dd00ff;
-  --clr-dropdown-hov: #2b2d30;
-  --clr-dropdown-link-hov: #dd00ff;
-  --clr-light: #ffffff;
+  --clr-bg-header: #3D8361;
+  --clr-btn: #3D8361;
+  --clr-dropdown: #1C6758;
+  --clr-nav-hover: #1E6F5C;
+  --clr-dropdown-hov: #289672;
+  --clr-dropdown-link-hov: #29BB89;
+  --clr-light: #FAFAFA;
 }
 
 * {
@@ -41,7 +41,7 @@ section {
   position: relative;
   height: calc(100vh - 3rem);
   width: 100%;
-  background-color: #3c3f40;
+  background: url("https://i.postimg.cc/TPn6kNJ2/bg.jpg") no-repeat top center / cover;
   overflow: hidden;
 }
 
@@ -86,11 +86,10 @@ section {
 
 .logo {
   color: var(--clr-light);
-  text-align: left;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 2px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   line-height: 3rem;
 }
 
@@ -102,6 +101,7 @@ section {
   display: inline-block;
   padding: .5rem 1.3rem;
   font-size: .8rem;
+  border: 2px solid var(--clr-light);
   border-radius: 2rem;
   line-height: 1;
   margin: 0 .2rem;
@@ -109,27 +109,17 @@ section {
   text-transform: uppercase;
 }
 
-.btn.solid {
-  background-color: #fbf3f3;
-  color: #000000;
-}
-
-.btn.solid:hover {
-  background-color: #78ff00;
-  color: #ffffff;
-}
-
-.btn.transparent {
-  background-color: #dd00ff;
-  color: #ffffff;
-}
+.btn.solid,
 .btn.transparent:hover {
-  background-color: #ff8900;
-  color: #000000;
+  background-color: var(--clr-light);
+  color: var(--clr-btn);
 }
 
-
-
+.btn.transparent,
+.btn.solid:hover {
+  background-color: transparent;
+  color: var(--clr-light);
+}
 
 .nav-links > ul {
   display: flex;
@@ -468,4 +458,3 @@ section {
     transform: translateY(15px);
   }
 }
-
